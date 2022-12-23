@@ -1,6 +1,10 @@
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import OurServices from "../components/OurServices";
+import OurMitra from "../components/ourMitra";
+import KenapaKami from "../components/KenapaKami";
+import Pengerjaan from "../components/Pengerjaan";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -13,9 +17,26 @@ export default function Home() {
           {/* Hero Section */}
           <HeroSection />
         </div>
-
-        {/* Our Services */}
-        <OurServices />
+        <div className="isolate">
+          {/* Our Services */}
+          <OurServices />
+        </div>
+        <div className="isolate">
+          {/* Why Us? */}
+          <KenapaKami />
+        </div>
+        <div className="isolate">
+          {/* Tahapan Pengerjaan */}
+          <Pengerjaan />
+        </div>
+        <div className="isolate">
+          {/* Our Mitra */}
+          <OurMitra />
+        </div>
+        <div className="isolate">
+          {/* Footer */}
+          <Footer />
+        </div>
       </section>
     </div>
   );

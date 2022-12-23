@@ -22,13 +22,9 @@ export default function Navbar() {
           aria-label="Global"
         >
           <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
-            <img
-              className="h-8"
-              src="https://tailwindui.com/img/logos/mark.svg?color=red&shade=600"
-              alt=""
-            />
-            <a href="#" className="-m-1.5 ml-4 flex pt-2 text-xl font-bold ">
-              BJA COATING
+            <img className="h-8" src="./public/bja.png" alt="" />
+            <a href="#" className="-m-1.5 ml-2 flex pt-2 text-xl font-bold ">
+              BJA COATINGS
             </a>
           </div>
           <div className="flex lg:hidden">

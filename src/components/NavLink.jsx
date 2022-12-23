@@ -7,27 +7,17 @@ const Navlink = () => {
         to={"/"}
         className="rounded-lg py-2 px-3 font-semibold text-gray-900 hover:bg-gray-400/10"
         style={({ isActive }) => ({
-          color: isActive ? "rgb(220 38 38)" : " ",
+          color: isActive ? "green" : " ",
         })}
       >
         Home
       </NavLink>
 
       <NavLink
-        to={"/about"}
-        className="rounded-lg py-2 px-3 font-semibold text-gray-900 hover:bg-gray-400/10"
-        style={({ isActive }) => ({
-          color: isActive ? "rgb(220 38 38)" : " ",
-        })}
-      >
-        About
-      </NavLink>
-
-      <NavLink
         to={"/gallery"}
         className="rounded-lg py-2 px-3 font-semibold text-gray-900 hover:bg-gray-400/10"
         style={({ isActive }) => ({
-          color: isActive ? "rgb(220 38 38)" : " ",
+          color: isActive ? "green" : " ",
         })}
       >
         Gallery
@@ -37,10 +27,20 @@ const Navlink = () => {
         to={"/contact"}
         className="rounded-lg py-2 px-3 font-semibold text-gray-900 hover:bg-gray-400/10"
         style={({ isActive }) => ({
-          color: isActive ? "red" : " ",
+          color: isActive ? "green" : " ",
         })}
       >
         Contact
+      </NavLink>
+
+      <NavLink
+        to={"/about"}
+        className="rounded-lg py-2 px-3 font-semibold text-gray-900 hover:bg-gray-400/10"
+        style={({ isActive }) => ({
+          color: isActive ? "green" : " ",
+        })}
+      >
+        About
       </NavLink>
     </>
   );
