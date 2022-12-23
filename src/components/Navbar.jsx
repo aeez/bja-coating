@@ -4,18 +4,11 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import NavLink from "./NavLink";
 import MobileNavbar from "./MobileNavbar";
 
-const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Gallery", href: "/gallery" },
-  { name: "Contact", href: "/contact" },
-];
-
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="pt-6">
+    <div className="border-b-2 border-green-700/80 py-6">
       <div>
         <nav
           className="flex h-9 items-center justify-between"
@@ -24,7 +17,7 @@ export default function Navbar() {
           <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
             <img className="h-8" src="./public/bja.png" alt="" />
             <a href="#" className="-m-1.5 ml-2 flex pt-2 text-xl font-bold ">
-              BJA COATINGS
+              BJA COATING
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -48,14 +41,10 @@ export default function Navbar() {
           >
             <div className="flex h-9 items-center justify-between">
               <div className="flex">
-                <img
-                  className="h-8"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=red&shade=600"
-                  alt=""
-                />
+                <img className="h-8" src="./public/bja.png" alt="" />
                 <a
                   href="#"
-                  className="-m-1.5 ml-4 flex pt-2 text-xl font-bold "
+                  className="-m-1.5 ml-2 flex pt-2 text-xl font-bold "
                 >
                   BJA COATING
                 </a>

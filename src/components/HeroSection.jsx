@@ -1,6 +1,4 @@
 import { React, useState } from "react";
-import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function HeroSection() {
   return (
@@ -38,28 +36,25 @@ export default function HeroSection() {
           <div className="mx-auto max-w-3xl pt-7 pb-32 sm:pt-36 sm:pb-40">
             <div>
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                <div className="relative -mb-3 overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/20">
+                <div className="relative -mb-3 overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-green-700">
                   <span className="text-gray-700">
-                    Supplier and Professional Epoxy Project.{" "}
+                    Supplier and Professional Epoxy Project.
                   </span>
                 </div>
               </div>
               <div>
                 <h1 className="text-7xl font-bold tracking-tight sm:text-center sm:text-7xl">
-                  BERKAH JAYA ABADI
+                  BERKAH JAYA ABADI COATING
                 </h1>
-                <p className="mt-6 text-2xl leading-8 tracking-wide text-gray-600 sm:text-center">
+                <p className="mt-6 text-2xl leading-8 text-gray-600 sm:text-center">
                   JASA PENGECATAN EPOXY LANTAI PROFESIONAL
                 </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
                   <a
                     href="#"
-                    className="inline-block rounded-lg bg-green-800 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-green-600 hover:bg-green-700 hover:ring-green-700"
+                    className="inline-block rounded-lg bg-green-800 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-green-800 hover:bg-green-700 hover:ring-green-700"
                   >
-                    Get started
-                    <span className="text-green-200" aria-hidden="true">
-                      &rarr;
-                    </span>
+                    Our Portfolio
                   </a>
                 </div>
               </div>
