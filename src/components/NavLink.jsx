@@ -5,9 +5,9 @@ const Navlink = () => {
     <>
       <NavLink
         to={"/"}
-        className="rounded-lg py-2 px-3 font-semibold text-gray-900 hover:bg-gray-400/10"
+        className="rounded-lg py-2 px-3 font-semibold"
         style={({ isActive }) => ({
-          color: isActive ? "green" : " ",
+          color: isActive ? "#10b981" : " ",
         })}
       >
         Home
@@ -15,9 +15,9 @@ const Navlink = () => {
 
       <NavLink
         to={"/gallery"}
-        className="rounded-lg py-2 px-3 font-semibold text-gray-900 hover:bg-gray-400/10"
+        className="rounded-lg py-2 px-3 font-semibold"
         style={({ isActive }) => ({
-          color: isActive ? "green" : " ",
+          color: isActive ? "#10b981" : " ",
         })}
       >
         Gallery
@@ -25,9 +25,9 @@ const Navlink = () => {
 
       <NavLink
         to={"/contact"}
-        className="rounded-lg py-2 px-3 font-semibold text-gray-900 hover:bg-gray-400/10"
+        className="rounded-lg py-2 px-3 font-semibold"
         style={({ isActive }) => ({
-          color: isActive ? "green" : " ",
+          color: isActive ? "#10b981" : " ",
         })}
       >
         Contact
@@ -35,9 +35,9 @@ const Navlink = () => {
 
       <NavLink
         to={"/about"}
-        className="rounded-lg py-2 px-3 font-semibold text-gray-900 hover:bg-gray-400/10"
+        className="rounded-lg py-2 px-3 font-semibold"
         style={({ isActive }) => ({
-          color: isActive ? "green" : " ",
+          color: isActive ? "#10b981" : " ",
         })}
       >
         About
