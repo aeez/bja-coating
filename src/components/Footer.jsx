@@ -1,11 +1,14 @@
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
     <div className="pt-16 pb-8">
       <div className="mx-auto max-w-7xl lg:flex lg:justify-between">
         <a href="" class="flex">
-          <img src="./public/bja.png" class="mr-3 h-8" alt="FlowBite Logo" />
+          <img src="/bja.png" class="mr-3 h-8" alt="FlowBite Logo" />
           <span class="text-2xl font-semibold ">BJA COATING</span>
         </a>
         <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
@@ -15,24 +18,24 @@ const Footer = () => {
             </h2>
             <ul class="text-gray-600 ">
               <li class="mb-4">
-                <a href="" class="hover:underline">
+                <NavLink to="/" className="hover:underline">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li class="mb-4">
-                <a href="https://flowbite.com/" class="hover:underline">
+                <NavLink to="/gallery" className="hover:underline">
                   Gallery
-                </a>
+                </NavLink>
               </li>
               <li class="mb-4">
-                <a href="https://flowbite.com/" class="hover:underline">
+                <NavLink to="/contact" className="hover:underline">
                   Contact
-                </a>
+                </NavLink>
               </li>
-              <li>
-                <a href="https://tailwindcss.com/" class="hover:underline">
+              <li class="mb-4">
+                <NavLink to="/about" className="hover:underline">
                   About
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -48,10 +51,15 @@ const Footer = () => {
                 </p>
               </li>
               <li class="mb-2">
-                <p>Tel: +62 xxx xxxx xxxx</p>
+                <p>Tel Kantor: +62 822 7773 8899</p>
+              </li>
+              <li class="mb-2">
+                <a href="" className="hover:text-green-700">
+                  No Wa : +62 812 6344 9454
+                </a>
               </li>
               <li class="mb-4">
-                <p>Email: user@email.com</p>
+                <p href="">Email: bjacoatings@gmail.com</p>
               </li>
             </ul>
           </div>
@@ -60,7 +68,7 @@ const Footer = () => {
       <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
         <span class="text-sm text-gray-500  sm:text-center">
-          © 2022 BJA COATING . All Rights Reserved.
+          © {year} BJA COATINGS. All Rights Reserved.
         </span>
         <div class="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
           <a href="#" class="text-gray-500 hover:text-gray-900 ">
@@ -136,41 +144,6 @@ const Footer = () => {
           </a>
         </div>
       </div>
-
-      {/* <div className="bg-white">
-        <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-          <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
-            <div className=" flex  justify-start">
-              <img src="/public/bja.png" alt="" className=" h-10 w-10" />
-              <h2 className="mx-3  flex justify-between">BJA COATINGS</h2>
-            </div>
-            <div className="">
-              <h2>Sitemap</h2>
-              <NavLink to={"/"} className="block">
-                Home
-              </NavLink>
-              <NavLink to={"/gallery"} className="block">
-                Gallery
-              </NavLink>
-              <NavLink to={"/contact"} className="block">
-                Contact
-              </NavLink>
-              <NavLink to={"/about"} className="block">
-                About
-              </NavLink>
-            </div>
-            <div className="">
-              <h3>Lokasi</h3>
-              <p>
-                Jl. Sugeng Komplek Sei Rotan Sakinah No.8 Blok C, Kec. Percut
-                Sei Tuan, Kab. Deli Serdang, Sumatera Utara, 20371
-              </p>
-              <p>Tel: +62 xxx xxxx xxxx</p>
-              <p>Email: user@email.com</p>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

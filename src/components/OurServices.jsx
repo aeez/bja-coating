@@ -46,15 +46,15 @@ const OurServices = () => {
           ))}
         </div>
         <div className="mt-14 flex justify-center gap-x-4 sm:justify-center">
-          <a
-            href="#"
+          <NavLink
+            to="/about"
             className="inline-block rounded-lg bg-green-800 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-green-800 hover:bg-green-700 hover:ring-green-700"
           >
             See More
             <span className="ml-1 text-green-200" aria-hidden="true">
               &rarr;
             </span>
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function HeroSection() {
   return (
@@ -15,19 +16,19 @@ export default function HeroSection() {
                 </div>
               </div>
               <div>
-                <h1 className="text-7xl font-bold tracking-tight sm:text-center sm:text-7xl">
-                  BERKAH JAYA ABADI COATING
+                <h1 className="text-6xl font-bold tracking-tight sm:text-center sm:text-7xl">
+                  BERKAH JAYA ABADI COATINGS
                 </h1>
                 <p className="mt-6 text-2xl leading-8 sm:text-center">
                   JASA PENGECATAN EPOXY LANTAI PROFESIONAL
                 </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
-                  <a
-                    href="#"
+                  <NavLink
+                    to={"/gallery"}
                     className="inline-block rounded-lg bg-green-800 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-green-800 hover:bg-green-700 hover:ring-green-700"
                   >
                     Our Portfolio
-                  </a>
+                  </NavLink>
                 </div>
               </div>
             </div>

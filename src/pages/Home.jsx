@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <div className="bg-hero relative z-10 grid grid-cols-12 bg-cover text-white shadow-xl">
-        <section className="col-span-10 col-start-2">
+        <section className="navbar col-span-10 col-start-2">
           {/* Navbar */}
           <Navbar />
 

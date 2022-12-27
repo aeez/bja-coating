@@ -1,24 +1,28 @@
 import { React, useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import NavLink from "./NavLink";
+import Navlink from "./Navlink";
 import MobileNavbar from "./MobileNavbar";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="navbar py-6">
+    <div className=" py-6">
       <div>
         <nav
           className="flex h-9 items-center justify-between"
           aria-label="Global"
         >
           <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
-            <img className="h-8" src="./public/bja.png" alt="" />
-            <a href="#" className="-m-1.5 ml-2 flex pt-2 text-xl font-bold ">
-              BJA COATING
-            </a>
+            <img className="h-8" src="/bja.png" alt="" />
+            <NavLink
+              to="/"
+              className="-m-1.5 ml-2 flex pt-2 text-xl font-bold "
+            >
+              BJA COATINGS
+            </NavLink>
           </div>
           <div className="flex lg:hidden">
             <button
@@ -31,7 +35,7 @@ export default function Navbar() {
             </button>
           </div>
           <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end lg:gap-x-6">
-            <NavLink />
+            <Navlink />
           </div>
         </nav>
         <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
