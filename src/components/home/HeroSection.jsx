@@ -19,7 +19,7 @@ export default function HeroSection() {
                 <h1 className="text-6xl font-bold tracking-tight sm:text-center sm:text-7xl">
                   BERKAH JAYA ABADI COATINGS
                 </h1>
-                <p className="mt-6 text-2xl leading-8 sm:text-center">
+                <p className="mt-6 text-xl leading-8 sm:text-center">
                   JASA PENGECATAN EPOXY LANTAI PROFESIONAL
                 </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
