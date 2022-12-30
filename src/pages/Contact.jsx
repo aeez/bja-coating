@@ -1,15 +1,17 @@
 import React from "react";
+import Footer from "../components/Footer";
+import SectionContact from "../components/contact/SectionContact";
 import Navbar from "../components/Navbar";
 
 export default function Contact() {
   return (
     <>
-      <Navbar />
-      <div className="w-full max-w-lg">
-        <h4 className="text-2xl">Our Contact</h4>
-        <p className="text-lg leading-relaxed text-gray-400">
-          The best, you are the best...
-        </p>
+      <div className=" grid grid-cols-12">
+        <section className="col-span-10 col-start-2">
+          <Navbar />
+          <SectionContact />
+          <Footer />
+        </section>
       </div>
     </>
   );

@@ -1,9 +1,9 @@
 import Navbar from "../components/Navbar";
-import HeroSection from "../components/HeroSection";
-import OurServices from "../components/OurServices";
-import OurMitra from "../components/OurMitra";
-import KenapaKami from "../components/KenapaKami";
-import Pengerjaan from "../components/Pengerjaan";
+import HeroSection from "../components/home/HeroSection";
+import OurServices from "../components/home/OurServices";
+import KenapaKami from "../components/home/KenapaKami";
+import Pengerjaan from "../components/home/Pengerjaan";
+import OurMitra from "../components/home/ourMitra";
 import Footer from "../components/Footer";
 
 export default function Home() {
