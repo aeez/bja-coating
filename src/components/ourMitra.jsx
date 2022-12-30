@@ -72,7 +72,7 @@ const OurMitra = () => {
         <div className="grid grid-cols-2 gap-y-6 gap-x-6 sm:grid-cols-1 sm:gap-y-8 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-8">
           {ourMitra.map((mitra) => (
             <div
-              className="flex h-24 items-center justify-center rounded-md bg-green-800 py-3 px-3 sm:h-28"
+              className="box-mitra flex h-24 items-center justify-center rounded-md bg-green-800 py-3 px-3 sm:h-28"
               key={mitra.id}
             >
               <div className="">
