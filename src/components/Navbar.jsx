@@ -27,7 +27,7 @@ export default function Navbar() {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-600"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
@@ -50,7 +50,7 @@ export default function Navbar() {
                   href="#"
                   className="-m-1.5 ml-2 flex pt-2 text-xl font-bold "
                 >
-                  BJA COATING
+                  BJA COATINGS
                 </a>
               </div>
               <div className="flex">

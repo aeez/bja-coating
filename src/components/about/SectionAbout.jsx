@@ -116,23 +116,32 @@ const SectionAbout = () => {
       <h1 className="flex justify-center text-4xl font-bold uppercase">
         Tentang Kami
       </h1>
-      <img src="/bja.png" alt="" className="4-20 mx-auto mt-8 flex h-40" />
-      <p className="sm:text-md mt-8 text-center text-xs md:text-sm lg:text-base">
-        BJA coatings didirikan pada tahun 2009. BJA coatings merupakan salah
-        satu kontraktor maupun supplier untuk segala jenis cat, terkhusus cat
-        epoxy lantai, baja dan kapal. BJA coatings memberikan jaminan kualitas
-        dan harga yang relatif lebih murah dari kompetitor lainnya.
-      </p>
-      <p className="sm:text-md  mt-16 text-xs md:text-sm  lg:text-base">
+      <div className="mx-auto mt-6 w-1/2 border-b-2 border-green-700/80 lg:w-1/6"></div>
+      <img
+        src="/bja.png"
+        alt=""
+        className="mx-auto mt-8 flex h-36 sm:h-36 md:h-36 lg:h-40 "
+      />
+      <div className="px-0 sm:px-0 md:px-0 lg:px-20">
+        <p className="mt-10 text-center text-base font-semibold sm:text-base md:text-base lg:text-lg">
+          BJA coatings didirikan pada tahun 2009. BJA coatings merupakan salah
+          satu kontraktor maupun supplier untuk segala jenis cat, terkhusus cat
+          epoxy lantai, baja dan kapal. BJA coatings memberikan jaminan kualitas
+          dan harga yang relatif lebih murah dari kompetitor lainnya.
+        </p>
+      </div>
+      <p className="sm:text-md  mt-16 text-center  font-bold md:text-sm lg:text-2xl">
         BJA EPOXY dapat diaplikasikan untuk kebutuhan pada :
       </p>
-      {Epoxy.map((epoxy) => (
-        <div className="" key={epoxy.id}>
-          <p className="sm:text-md py-3 text-xs md:text-sm lg:text-base">
-            {epoxy.id}. {epoxy.name} : {epoxy.explained}
-          </p>
-        </div>
-      ))}
+      <div className="px-20">
+        {Epoxy.map((epoxy) => (
+          <div className="" key={epoxy.id}>
+            <p className="sm:text-md py-3 text-xs md:text-sm lg:text-base">
+              {epoxy.id}. {epoxy.name} : {epoxy.explained}
+            </p>
+          </div>
+        ))}
+      </div>
       <p className="sm:text-md  mt-10 text-xs md:text-sm  lg:text-base"> </p>
       Kami telah dipercayai oleh :
       {diPercaya.map((dpr) => (

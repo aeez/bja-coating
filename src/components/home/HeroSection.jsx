@@ -9,7 +9,7 @@ export default function HeroSection() {
           <div className="mx-auto max-w-3xl pt-7 pb-32 sm:pt-28 sm:pb-64">
             <div>
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                <div className="relative -mb-3 overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-2 ring-green-700">
+                <div className="relative -mb-3 overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-slate-200">
                   <span className="head-subtitle">
                     Supplier and Professional Epoxy Project.
                   </span>
