@@ -12,7 +12,7 @@ export default function Navbar() {
     <div className=" py-6">
       <div>
         <nav
-          className="flex h-9 items-center justify-between"
+          className="flex h-9 items-center justify-between "
           aria-label="Global"
         >
           <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
@@ -27,7 +27,7 @@ export default function Navbar() {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-600"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
