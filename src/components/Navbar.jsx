@@ -12,7 +12,7 @@ export default function Navbar() {
     <div className=" py-6">
       <div>
         <nav
-          className="flex h-9 items-center justify-between"
+          className="flex h-9 items-center justify-between "
           aria-label="Global"
         >
           <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
