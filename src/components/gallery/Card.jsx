@@ -33,7 +33,7 @@ const Card = () => {
           <SwiperSlide>
             <div className="slide">
               <img
-                src="./src/assets/images/bg-hero.jpg"
+                src="/assets/images/bg-hero.jpg"
                 className="h-full w-full object-cover"
                 alt=""
               />
@@ -42,7 +42,7 @@ const Card = () => {
           <SwiperSlide>
             <div className="slide">
               <img
-                src="./src/assets/images/bg-hero.jpg"
+                src="/assets/images/bg-hero.jpg"
                 className="h-full w-full"
                 alt=""
               />
@@ -51,7 +51,7 @@ const Card = () => {
           <SwiperSlide>
             <div className="slide">
               <img
-                src="./src/assets/images/bg-hero.jpg"
+                src="/assets/images/bg-hero.jpg"
                 className="h-full w-full"
                 alt=""
               />
@@ -60,7 +60,7 @@ const Card = () => {
           <SwiperSlide>
             <div className="slide">
               <img
-                src="./src/assets/images/bg-hero.jpg"
+                src="/assets/images/bg-hero.jpg"
                 className="h-full w-full"
                 alt=""
               />
@@ -69,7 +69,7 @@ const Card = () => {
           <SwiperSlide>
             <div className="slide">
               <img
-                src="./src/assets/images/bg-hero.jpg"
+                src="/assets/images/bg-hero.jpg"
                 className="h-full w-full"
                 alt=""
               />
@@ -78,7 +78,7 @@ const Card = () => {
           <SwiperSlide>
             <div className="slide">
               <img
-                src="./src/assets/images/bg-hero.jpg"
+                src="/assets/images/bg-hero.jpg"
                 className="h-full w-full"
                 alt=""
               />

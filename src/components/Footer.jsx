@@ -51,15 +51,33 @@ const Footer = () => {
                 </p>
               </li>
               <li class="mb-2">
-                <p>Tel Kantor: +62 822 7773 8899</p>
+                Tel Kantor :
+                <a
+                  href="tel: +62 822 7773 8899"
+                  className="hover:text-green-700"
+                >
+                  +62 822 7773 8899
+                </a>
               </li>
               <li class="mb-2">
-                <a href="" className="hover:text-green-700">
-                  No Wa : +62 812 6344 9454
+                No Wa :
+                <a
+                  href="https://api.whatsapp.com/send?phone=6285156913789"
+                  className="hover:text-green-700"
+                  target="__blank"
+                >
+                  +62 812 6344 9454
                 </a>
               </li>
               <li class="mb-4">
-                <p href="">Email: bjacoatings@gmail.com</p>
+                Email :
+                <a
+                  href="mailto:bjacoatings@gmail.com"
+                  className="hover:text-green-700"
+                  target="__blank"
+                >
+                  bjacoatings@gmail.com
+                </a>
               </li>
             </ul>
           </div>
@@ -71,22 +89,11 @@ const Footer = () => {
           © {year} BJA COATINGS. All Rights Reserved.
         </span>
         <div class="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-          <a href="#" class="text-gray-500 hover:text-gray-900 ">
-            <svg
-              class="h-5 w-5"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <span class="sr-only">Facebook page</span>
-          </a>
-          <a href="#" class="text-gray-500 hover:text-gray-900 ">
+          <a
+            href="https://www.instagram.com/bja.coatings/"
+            class="text-gray-500 hover:text-gray-900 "
+            target="__blank"
+          >
             <svg
               class="h-5 w-5"
               fill="currentColor"
@@ -99,18 +106,40 @@ const Footer = () => {
                 clip-rule="evenodd"
               />
             </svg>
-            <span class="sr-only">Instagram page</span>
           </a>
-          <a href="#" class="text-gray-500 hover:text-gray-900 ">
+          <a
+            href="https://api.whatsapp.com/send?phone=6285156913789"
+            class="text-gray-500 hover:text-gray-900 "
+            target="__blank"
+          >
             <svg
-              class="h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
+              class="bi bi-whatsapp h-5 w-5"
+              viewBox="0 0 16 16"
             >
-              <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+              <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
             </svg>
-            <span class="sr-only">Twitter page</span>
+          </a>
+          <a
+            href="mailto:bjacoatings@gmail.com"
+            class="text-gray-500 hover:text-gray-900 "
+            target="__blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+              />
+            </svg>
           </a>
         </div>
       </div>

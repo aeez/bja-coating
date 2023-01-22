@@ -3,7 +3,7 @@
 }
 
 .bg-hero {
-  background-image: url(./assets/images/hero-enhance.jpeg);
+  background-image: url(/assets/images/hero-enhance.jpeg);
 }
 
 .bg-hero::after {

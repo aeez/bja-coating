@@ -25,15 +25,27 @@ export default function Navbar() {
             </NavLink>
           </div>
           <div className="flex lg:hidden">
-            <button
-              type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black"
-              onClick={() => setMobileMenuOpen(true)}
-            >
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-            </button>
+            {!mobileMenuOpen ? (
+              <button
+                type="button"
+                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black"
+                onClick={() => setMobileMenuOpen(true)}
+              >
+                <span className="sr-only">Open main menu</span>
+                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              </button>
+            ) : (
+              <button
+                type="button"
+                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <span className="sr-only">Close menu</span>
+                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              </button>
+            )}
           </div>
+
           <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end lg:gap-x-6">
             <Navlink />
           </div>
@@ -41,32 +53,12 @@ export default function Navbar() {
         <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <Dialog.Panel
             focus="true"
-            className="fixed inset-0 z-10 overflow-y-auto bg-white px-8 py-6 lg:hidden"
+            className="px-auto fixed inset-0 z-10 ml-24 mt-16 h-60 w-60  rounded-lg bg-slate-100 py-2 lg:hidden"
           >
-            <div className="flex h-9 items-center justify-between">
-              <div className="flex">
-                <img className="h-8" src="./public/bja.png" alt="" />
-                <a
-                  href="#"
-                  className="-m-1.5 ml-2 flex pt-2 text-xl font-bold "
-                >
-                  BJA COATINGS
-                </a>
-              </div>
-              <div className="flex">
-                <button
-                  type="button"
-                  className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  <span className="sr-only">Close menu</span>
-                  <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
-              </div>
-            </div>
+            <div className="flex items-center justify-between"></div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
+              <div className="-my-6 ">
+                <div className="space-y-2 py-3">
                   <MobileNavbar />
                 </div>
               </div>
