@@ -125,7 +125,7 @@ const SectionAbout = () => {
         className="mx-auto mt-8 flex h-36 sm:h-36 md:h-36 lg:h-40 "
       />
       <div className="px-0 sm:px-0 md:px-0 lg:px-20">
-        <p className="mt-10 text-center text-base font-semibold sm:text-base md:text-base lg:text-lg">
+        <p className="mt-10 text-center text-base sm:text-base md:text-base lg:text-lg">
           BJA coatings didirikan pada tahun 2009. BJA coatings merupakan salah
           satu kontraktor maupun supplier untuk segala jenis cat, terkhusus cat
           epoxy lantai, baja dan kapal. BJA coatings memberikan jaminan kualitas
