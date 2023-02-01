@@ -11,6 +11,132 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
+const cards = [
+  {
+    id: 1,
+    name: "PT. Cemerlang Samudera Kontrindo",
+    explain: "Menggunakan epoxy lantai (SL), dengan ketebalan 500 micron",
+    image1:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BASKET)/File_000.png",
+    image2:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BASKET)/File_001.png",
+    image3:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BADMINTON)/File_001.png",
+    image4:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BADMINTON)/File_003.png",
+    image5:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_VOLI)/File_001.png",
+    image6:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_VOLI)/File_003.png",
+  },
+  {
+    id: 2,
+    name: "PT. Ceppa Indonesia",
+    explain: "Menggunakan epoxy lantai (SL), dengan ketebalan 2000 micron",
+    image1:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BASKET)/File_000.png",
+    image2:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BASKET)/File_001.png",
+    image3:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BADMINTON)/File_001.png",
+    image4:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BADMINTON)/File_003.png",
+    image5:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_VOLI)/File_001.png",
+    image6:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_VOLI)/File_003.png",
+  },
+  {
+    id: 3,
+    name: "PT. SPA SIBOLGA",
+    explain:
+      "Menggunakan material ucrete (yang kerasnya sudah seperti k350 dan sudah memenuhi standart foodgrade), dengan ketebalan 6mm",
+    image1:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BASKET)/File_000.png",
+    image2:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BASKET)/File_001.png",
+    image3:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BADMINTON)/File_001.png",
+    image4:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BADMINTON)/File_003.png",
+    image5:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_VOLI)/File_001.png",
+    image6:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_VOLI)/File_003.png",
+  },
+  {
+    id: 4,
+    name: "PT. SPA SIBOLGA (Cold Storage)",
+    explain: "Menggunakan epoxy mortar, dengan ketebalan 9mm",
+    image1:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BASKET)/File_000.png",
+    image2:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BASKET)/File_001.png",
+    image3:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BADMINTON)/File_001.png",
+    image4:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BADMINTON)/File_003.png",
+    image5:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_VOLI)/File_001.png",
+    image6:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_VOLI)/File_003.png",
+  },
+  {
+    id: 5,
+    name: "PT. Sri Makmur Abadi",
+    explain:
+      "Menggunakan material ucrete (yang kerasnya sudah seperti k350 dan sudah memenuhi standary foodfgrade), dengan ketebalan 3mm.",
+    image1:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BASKET)/File_000.png",
+    image2:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BASKET)/File_001.png",
+    image3:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BADMINTON)/File_001.png",
+    image4:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BADMINTON)/File_003.png",
+    image5:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_VOLI)/File_001.png",
+    image6:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_VOLI)/File_003.png",
+  },
+  {
+    id: 6,
+    name: "SMKN 1 TANJUNG MORAWA",
+    explain:
+      "Menggunakan epoxy lantai jenis PU (material khusus untuk lantai lapangan) dengan ketahanan warna hingga 10 tahun.",
+    image1:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BASKET)/File_000.png",
+    image2:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BASKET)/File_001.png",
+    image3:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BADMINTON)/File_001.png",
+    image4:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BADMINTON)/File_003.png",
+    image5:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_VOLI)/File_001.png",
+    image6:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_VOLI)/File_003.png",
+  },
+  {
+    id: 7,
+    name: "Yayasan Pesantren Raudhatul Hasanah",
+    explain:
+      "Menggunakan epoxy lantai jenis PU (material khusus untuk lantai lapangan) dengan ketahanan warna hingga 10 tahun.",
+    image1:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BASKET)/File_000.png",
+    image2:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BASKET)/File_001.png",
+    image3:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BADMINTON)/File_001.png",
+    image4:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_BADMINTON)/File_003.png",
+    image5:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_VOLI)/File_001.png",
+    image6:
+      "/assets/images/YAYASAN_PESANTREN_RAUDHATUL_HASANAH_(LAPANGAN_VOLI)/File_003.png",
+  },
+];
+
 const Card = () => {
   return (
     <div className="my-12">
@@ -18,93 +144,73 @@ const Card = () => {
 
       <div className="mx-auto mt-6 w-1/2 border-b-2 border-green-700/80 lg:w-1/6"></div>
 
-      <div className="my-16 grid  grid-cols-1 gap-4 rounded-lg bg-gray-300 sm:grid-cols-1 lg:grid-cols-2 ">
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={30}
-          loop={true}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Pagination, Navigation]}
-          className="mySwiper rounded-lg"
-        >
-          <SwiperSlide>
-            <div className="slide">
-              <img
-                src="/assets/images/bg-hero.jpg"
-                className="h-full w-full object-cover"
-                alt=""
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide">
-              <img
-                src="/assets/images/bg-hero.jpg"
-                className="h-full w-full"
-                alt=""
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide">
-              <img
-                src="/assets/images/bg-hero.jpg"
-                className="h-full w-full"
-                alt=""
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide">
-              <img
-                src="/assets/images/bg-hero.jpg"
-                className="h-full w-full"
-                alt=""
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide">
-              <img
-                src="/assets/images/bg-hero.jpg"
-                className="h-full w-full"
-                alt=""
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide">
-              <img
-                src="/assets/images/bg-hero.jpg"
-                className="h-full w-full"
-                alt=""
-              />
-            </div>
-          </SwiperSlide>
-        </Swiper>
+      <div className=" mt-16 grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+        {cards.map((card) => (
+          <div
+            className=" grid grid-cols-1 rounded-lg bg-gray-300 sm:grid-cols-1 lg:grid-cols-1"
+            key={card.id}
+          >
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              loop={true}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation]}
+              className="mySwiper rounded-lg"
+            >
+              <SwiperSlide>
+                <img
+                  src={card.image1}
+                  className="slide-img object-cover"
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={card.image2}
+                  className="slide-img object-cover"
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={card.image3}
+                  className="slide-img object-cover"
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={card.image4}
+                  className="slide-img object-cover"
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={card.image5}
+                  className="slide-img object-cover"
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={card.image6}
+                  className="slide-img object-cover"
+                  alt=""
+                />
+              </SwiperSlide>
+            </Swiper>
 
-        <div className="p-6 sm:py-3">
-          <h3 className="mb-4 text-3xl font-bold">
-            Yayasan Pesantren Raudhatul Hasanah
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi,
-            doloremque. Nam, culpa in quis molestias provident alias recusandae
-            eos corporis enim, tempore earum doloribus at. Quia corrupti id
-            totam dolor voluptatibus aliquam, neque numquam praesentium
-            molestiae aliquid odio ullam doloribus quod facilis laboriosam
-            dolores quam, rerum sunt consequuntur omnis commodi vero ad.
-            Reiciendis distinctio voluptatibus, tenetur sunt veniam cum
-            veritatis rerum magni! Nemo aut excepturi, beatae, provident tenetur
-            dolores quisquam numquam vitae laboriosam ex corporis ducimus modi,
-            velit tempora explicabo minus facere. Esse dolorem quibusdam quia
-            ducimus alias optio, aspernatur cupiditate in quaerat mollitia
-            beatae at quam itaque eius minus!
-          </p>
-        </div>
+            <div className="my-6 mx-4">
+              <h3 className="mb-3 text-2xl font-bold">{card.name}</h3>
+              <p>{card.explain}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
