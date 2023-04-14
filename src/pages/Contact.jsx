@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "../components/Footer";
+import Navbar from "../components/nav/Navbar";
+import Footer from "../components/nav/Footer";
 import SectionContact from "../components/contact/SectionContact";
-import Navbar from "../components/Navbar";
 
 export default function Contact() {
   return (
