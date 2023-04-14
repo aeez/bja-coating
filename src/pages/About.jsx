@@ -1,8 +1,7 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-
-import Footer from "../components/Footer";
-import SectionAbout from "../components/about/sectionAbout";
+import Navbar from "../components/nav/Navbar";
+import Footer from "../components/nav/Footer";
+import SectionAbout from "../components/about/SectionAbout";
 export default function About() {
   return (
     <>

@@ -1,5 +1,3 @@
-import React, { useRef, useState } from "react";
-import { Carousel } from "flowbite-react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 

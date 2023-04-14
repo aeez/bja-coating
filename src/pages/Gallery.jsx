@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../components/gallery/Card";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../components/nav/Navbar";
+import Footer from "../components/nav/Footer";
 
 export default function Gallery() {
   return (
