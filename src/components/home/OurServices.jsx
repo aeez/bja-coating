@@ -2,7 +2,6 @@
 import React from "react";
 import { Modal } from "flowbite-react";
 import { useState } from "react";
-
 import { ArrowRightCircleIcon } from "@heroicons/react/24/outline";
 
 const ourServices = [
@@ -140,14 +139,14 @@ const OurServices = () => {
               dismissible={true}
               show={onClick}
               onClose={() => setOnClick(false)}
-              className="lg:py-auto py-16"
+              className="h-screen "
             >
               <Modal.Header>
                 <p className="text-xl font-bold text-green-900 sm:text-2xl sm:font-semibold">
                   Layanan Kami
                 </p>
               </Modal.Header>
-              <Modal.Body className="h-96 w-auto overflow-visible overflow-y-auto">
+              <Modal.Body className="max-h-90 w-auto overflow-y-auto lg:max-h-80 lg:w-full">
                 <div className="space-y-6">
                   <div className="mx-auto my-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
                     {detailLayanan.map((service) => (

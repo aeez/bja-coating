@@ -5,18 +5,18 @@ export default function HeroSection() {
   return (
     <>
       <main>
-        <div className="relative">
+        <div className="relative ">
           <div className="mx-auto max-w-3xl pt-7 pb-32 sm:pt-28 sm:pb-64">
             <div>
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div className="relative -mb-3 overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-slate-200">
-                  <span className="head-subtitle">
+                  <span className="head-subtitle ">
                     Supplier and Professional Epoxy Project.
                   </span>
                 </div>
               </div>
               <div>
-                <h1 className="text-6xl font-bold tracking-tight sm:text-center sm:text-7xl">
+                <h1 className="text-6xl font-bold tracking-tight  sm:text-center sm:text-7xl ">
                   BERKAH JAYA ABADI COATINGS
                 </h1>
                 <p className="mt-6 text-xl leading-8 sm:text-center">
