@@ -11,8 +11,8 @@ const SectionContact = () => {
                         Head Office
                     </h3>
                     <p className="mt-4">
-                        Jl. Sugeng Desa sei rotan, kecamatan percut sei tuan,
-                        kabupaten deli serdang, provinsi sumatera utara, 20371.
+                        Jl. Sugeng Desa Sei Rotan, Kec. Percut Sei Tuan, Kab.
+                        Deli Serdang,Sumatera Utara, 20371.
                     </p>
                     <div class="mt-6 flex space-x-6 sm:mt-7 ">
                         <a

@@ -48,16 +48,16 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="ml-24 w-56">
-                        <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 ">
+                    <div className="ml-20 w-56">
+                        <h2 class="text-x-sm mb-6 font-semibold uppercase text-gray-900 ">
                             Lokasi
                         </h2>
                         <ul class="text-gray-600 ">
                             <li class="mb-2">
                                 <p>
-                                    Jl. Sugeng Desa sei rotan, kecamatan percut
-                                    sei tuan, kabupaten deli serdang, provinsi
-                                    sumatera utara, 20371.
+                                    Jl. Sugeng Desa Sei Rotan, Kec. Percut Sei
+                                    Tuan, {""} Kab Deli Serdang, {""} Sumatera
+                                    Utara, 20371.
                                 </p>
                             </li>
                             <li class="mb-2">
@@ -66,17 +66,26 @@ const Footer = () => {
                                     href="tel: +62 822 7773 8899"
                                     className="hover:text-green-700"
                                 >
-                                    +62 822 7773 8899
+                                    +62 812 6344 9454
                                 </a>
                             </li>
                             <li class="mb-2">
-                                No Wa :
+                                No Wa {""} :
                                 <a
                                     href="https://api.whatsapp.com/send?phone=6281263449454"
                                     className="hover:text-green-700"
                                     target="__blank"
                                 >
-                                    +62 812 6344 9454
+                                    +62 822 7773 8899
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="https://api.whatsapp.com/send?phone=6281263449454"
+                                    className="hover:text-green-700"
+                                    target="__blank"
+                                >
+                                    085765442607
                                 </a>
                             </li>
                             <li class="mb-4">
@@ -87,6 +96,24 @@ const Footer = () => {
                                     target="__blank"
                                 >
                                     bjacoatings@gmail.com
+                                </a>
+                            </li>
+                            <li class="mb-4">
+                                <a
+                                    href="mailto:dharmajaya736@gmail.com"
+                                    className="hover:text-green-700"
+                                    target="__blank"
+                                >
+                                    dharmajaya736@gmail.com
+                                </a>
+                            </li>
+                            <li class="mb-4">
+                                <a
+                                    href="mailto:nicodvndrijaya05@gmail.com"
+                                    className="hover:text-green-700"
+                                    target="__blank"
+                                >
+                                    nicodvndrijaya05@gmail.com
                                 </a>
                             </li>
                         </ul>
